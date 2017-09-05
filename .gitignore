@@ -1,0 +1,4 @@
+/node_modules/
+.jssdk.json
+/www/
+.DS_Store
