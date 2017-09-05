@@ -5,14 +5,13 @@ module.exports = {
     port: 8080,
     open: true,
     openTarget: 'demos/index.html',
-    liveload: true,
     path: { simple: '' },
     devType: 'common',
     webpack: {
       entry: {},
       sourcemap: 'cheap-module-inline-source-map',
       uglify: true,
-      hotreload: false,
+      hotreload: true,
       'optimize-size': {
         nuke: true,
         webpack: false,

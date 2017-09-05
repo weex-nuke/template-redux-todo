@@ -1,56 +1,53 @@
 {
-    "name": "template-redux-todo",
-    "description": "todoMVC项目，演示rax与redux的结合使用",
-    "version": "0.0.2",
-    "keywords": [
-        "redux",
-        "nuke",
-        "nuke-template"
+  "name": "template-redux-todo",
+  "description": "todoMVC项目，演示rax与redux的结合使用",
+  "version": "0.0.2",
+  "keywords": ["redux", "nuke", "nuke-template"],
+  "scripts": {
+    "start":
+      "DEV=1 LIVELOAD=1 ./node_modules/.bin/webpack-dev-server --config ./webpack.config.js --host 0.0.0.0 --port 9000",
+    "build": "./node_modules/.bin/webpack --config ./webpack.config.js"
+  },
+  "readmeFilename": "README.md",
+  "tnpm": {
+    "mode": "npminstall"
+  },
+  "dependencies": {
+    "nuke": "^0.7.x",
+    "rax": "^0.4.x",
+    "rax-redux": "^0.4.x",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "babel-eslint": "^7.2.3",
+    "eslint-config-ali": "2.0.0",
+    "eslint-plugin-import": "2.6.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.1.0"
+  },
+  "themeOption": {
+    "screenshot": [
+      "https://img.alicdn.com/tfs/TB1Pu7vSXXXXXcoXVXXXXXXXXXX-1242-2208.png"
     ],
-    "scripts": {
-        "start": "DEV=1 LIVELOAD=1 ./node_modules/.bin/webpack-dev-server --config ./webpack.config.js --host 0.0.0.0 --port 9000",
-        "build": "./node_modules/.bin/webpack --config ./webpack.config.js"
+    "pageName": "",
+    "baseNuke": "both",
+    "id": 21
+  },
+  "compatibility": {
+    "qn": {
+      "ios": "true",
+      "android": "true"
     },
-    "readmeFilename": "README.md",
-    "tnpm": {
-        "mode": "npminstall"
+    "tb": {
+      "ios": "true",
+      "android": "true"
     },
-    "dependencies": {
-        "nuke": "^0.7.x",
-        "rax": "^0.2.x",
-        "rax-redux": "^0.4.x",
-        "redux": "^3.6.0",
-        "redux-logger": "^3.0.6",
-        "redux-thunk": "^2.1.0"
-    },
-    "devDependencies": {
-        "eslint": "3.19.0",
-        "babel-eslint": "^7.2.3",
-        "eslint-config-ali": "2.0.0",
-        "eslint-plugin-import": "2.6.0",
-        "eslint-plugin-jsx-a11y": "6.0.2",
-        "eslint-plugin-react": "7.1.0"
-    },
-    "themeOption": {
-        "screenshot": [
-            "https://img.alicdn.com/tfs/TB1Pu7vSXXXXXcoXVXXXXXXXXXX-1242-2208.png"
-        ],
-        "pageName": "",
-        "baseNuke": "both",
-        "id": 21
-    },
-    "compatibility": {
-        "qn": {
-            "ios": "true",
-            "android": "true"
-        },
-        "tb": {
-            "ios": "true",
-            "android": "true"
-        },
-        "tm": {
-            "ios": "true",
-            "android": "true"
-        }
+    "tm": {
+      "ios": "true",
+      "android": "true"
     }
+  }
 }
